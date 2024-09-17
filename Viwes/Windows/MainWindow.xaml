@@ -21,7 +21,7 @@
                          Name="InputTextBox"
                          FontSize="30"
                          KeyDown="TextBox_KeyDown" LayoutUpdated="InputTextBox_LayoutUpdated"/>
-                <Label Content="Введите число от 1 до 10"
+                <Label Content="Введите число от 1 до 30"
                        Name="riml"
                        Width="250"
                        FontSize="32"
