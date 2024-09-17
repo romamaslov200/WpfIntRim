@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfIntRim.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfIntRim"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Border>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="1"
+                        Orientation="Vertical"
+                        VerticalAlignment="Center">
+                <TextBox Width="150"
+                         Name="InputTextBox"
+                         FontSize="30"
+                         KeyDown="TextBox_KeyDown" LayoutUpdated="InputTextBox_LayoutUpdated"/>
+                <Label Content="Введите число от 1 до 10"
+                       Name="riml"
+                       Width="250"
+                       FontSize="32"
+                       HorizontalContentAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Padding="0" LayoutUpdated="riml_LayoutUpdated"/>
+            </StackPanel>
+            
+        </Grid>
+    </Border>
+</Window>
