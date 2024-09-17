@@ -39,7 +39,7 @@ namespace WpfIntRim
 
         private void InputTextBox_LayoutUpdated(object sender, EventArgs e)
         {
-            int max = 30, min = 14;
+            int max = 30, min = 20;
             int InputLength = InputTextBox.Text.Length;
 
             int UpdateSize = max - InputLength;
